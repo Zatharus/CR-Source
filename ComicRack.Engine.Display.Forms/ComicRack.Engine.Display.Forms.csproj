@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files\ComicRack\ComicRack.Engine.Display.Forms.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CC86282-B67A-4F8A-9C80-E5C91D12D1A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ComicRack.Engine.Display.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.5915.38776</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>cYo.Projects.ComicRack.Engine.Display.Forms</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComicRack.Engine">
+      <HintPath>lib\ComicRack.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Windows7.Multitouch">
+      <HintPath>lib\Windows7.Multitouch.dll</HintPath>
+    </Reference>
+    <Reference Include="cYo.Common">
+      <HintPath>lib\cYo.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="cYo.Common.Presentation">
+      <HintPath>lib\cYo.Common.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="cYo.Common.Windows">
+      <HintPath>lib\cYo.Common.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GestureOverlay.cs" />
+    <Compile Include="ImageDisplayControl.cs" />
+    <Compile Include="ComicDisplayControl.cs" />
+    <Compile Include="NavigationOverlay.cs" />
+    <Compile Include="PanelType.cs" />
+    <Compile Include="PanelRenderer.cs" />
+    <Compile Include="TextOverlay.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComicDisplayControl.resx" />
+    <EmbeddedResource Include="ImageDisplayControl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

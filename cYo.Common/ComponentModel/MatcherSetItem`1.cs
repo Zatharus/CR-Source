@@ -1,0 +1,25 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: cYo.Common.ComponentModel.MatcherSetItem`1
+// Assembly: cYo.Common, Version=1.0.5915.38773, Culture=neutral, PublicKeyToken=b3ca110c99b4b731
+// MVID: 5D64BD1B-C14B-43A5-BB76-3BCC544EA860
+// Assembly location: C:\Program Files\ComicRack\cYo.Common.dll
+
+#nullable disable
+namespace cYo.Common.ComponentModel
+{
+  public class MatcherSetItem<T>
+  {
+    public MatcherSetItem(MatcherMode mode, bool not, IMatcher<T> matcher)
+    {
+      this.Mode = mode;
+      this.Not = not;
+      this.Matcher = matcher;
+    }
+
+    public bool Not { get; set; }
+
+    public MatcherMode Mode { get; set; }
+
+    public IMatcher<T> Matcher { get; set; }
+  }
+}

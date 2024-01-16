@@ -1,0 +1,33 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: cYo.Projects.ComicRack.Viewer.Views.ISidebar
+// Assembly: ComicRack, Version=1.0.5915.38777, Culture=neutral, PublicKeyToken=b3ca110c99b4b731
+// MVID: E9032406-66BB-46BB-A802-D697DB44DA19
+// Assembly location: C:\Program Files\ComicRack\ComicRack.exe
+
+using cYo.Projects.ComicRack.Engine.Controls;
+using System.Drawing;
+
+#nullable disable
+namespace cYo.Projects.ComicRack.Viewer.Views
+{
+  public interface ISidebar
+  {
+    bool Visible { get; set; }
+
+    bool Preview { get; set; }
+
+    bool Info { get; set; }
+
+    bool TopBrowser { get; set; }
+
+    bool HasInfoPanels { get; }
+
+    int TopBrowserSplit { get; set; }
+
+    bool InfoBrowserRight { get; set; }
+
+    Size InfoBrowserSize { get; set; }
+
+    void AddInfo(ComicPageControl page);
+  }
+}

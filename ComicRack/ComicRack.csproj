@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files\ComicRack\ComicRack.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6DB24B3-F821-4B4F-9F64-7D150D4F0A7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ComicRack</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.5915.38777</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>cYo</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComicRack.Engine">
+      <HintPath>lib\ComicRack.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="ComicRack.Engine.Display.Forms">
+      <HintPath>lib\ComicRack.Engine.Display.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ComicRack.Plugins">
+      <HintPath>lib\ComicRack.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqToTwitter">
+      <HintPath>lib\LinqToTwitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="cYo.Common">
+      <HintPath>lib\cYo.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="cYo.Common.Presentation">
+      <HintPath>lib\cYo.Common.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="cYo.Common.Windows">
+      <HintPath>lib\cYo.Common.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Windows\Forms\TwitterPinDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\OptimizedProfessionalColorTable.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\OptimizedTanColorTable.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\IDisplayWorkspace.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\IMain.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\OpenComicOptions.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\NavigatorManager.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\NewsStorage.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\ReaderForm.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\ScriptOutputForm.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\ScriptUtility.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\SearchEngines.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Twitter.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\CommandHandler.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\ServiceCommandHandler`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\UpdateHandler.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\ServiceUpdateHandler`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\CommandMapper.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\MainForm.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Program.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Win7.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Menus\ToolStripThumbSize.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicBrowserForm.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicBrowserView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicListBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicListFilesBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicExplorerViewSettings.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\DragDropContainer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\FolderComicListProvider.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IBrowseHistory.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IImportComicList.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IItemSize.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ILibraryBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IListDisplays.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ISidebar.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IRemoveBooks.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ISearchOptions.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\IComicBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\QuickOpenView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\RemoteConnectionView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\SmallComicPreview.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicPagesView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicBrowserControl.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicListFolderFilesBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicExplorerView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\MainView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\ComicListLibraryBrowser.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Views\SubView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Properties\Resources.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\CrashReport.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\SubmitReportCompletedEventHandler.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\SubmitReportCompletedEventArgs.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\UserValidation.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\HasDonatedCompletedEventHandler.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Remote\HasDonatedCompletedEventArgs.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\EditListDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\IMatcherEditor.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ISmartListDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ListEditorDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\OpenRemoteDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\DeviceEditControl.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\DevicesEditDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\DeviceSelectDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\QuickRatingDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ServerEditControl.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\SmartListQueryDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ValueEditorDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ComicDataPasteDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ComicDisplaySettingsDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\DonationDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ShowErrorsDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ExportComicsDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\CrashDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\DeleteItemDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\MatcherGroupEditor.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\NewsDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\PasswordDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\TasksDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\SaveWorkspaceDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ZoomDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ComicBookDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ListLayoutDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\SmartListDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\MatcherEditor.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\MultipleComicBooksDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\PreferencesDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\ProgressDialog.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Dialogs\Splash.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\FavoriteViewItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\ISetCustomThumbnail.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\LibraryTreeSkin.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PagesView.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\ComicListField.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\EditControlUtility.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\ThumbnailViewItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemCommunityRatingComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemRatingComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemReadPercentageComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemBookComparer`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemStatsComparer`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\IBookGrouper.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemBookGrouper`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemStatsGrouper`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItemPositionComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\MarkerType.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverThumbnailSizing.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\CoverViewItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\FolderViewItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewItemPageComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewItemKeyComparer.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewItemComparer`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewItemGrouper`1.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewBookmarkGrouper.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\PageViewItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Controls\ItemSizeInfo.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\DefaultLists.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\ExtendedSettings.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\BookPageLayout.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\RemoteShareItem.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\WorkspaceType.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\DisplayWorkspace.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\ListConfiguration.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\HiddenMessageBoxes.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\TabLayouts.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\LibraryGauges.cs" />
+    <Compile Include="Projects\ComicRack\Viewer\Config\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Windows\Forms\TwitterPinDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Controls\PagesView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ComicBookDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ComicDataPasteDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ComicDisplaySettingsDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\CrashDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\DeleteItemDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\DeviceEditControl.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\DevicesEditDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\DeviceSelectDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\DonationDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\EditListDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ExportComicsDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ListEditorDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ListLayoutDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\MatcherEditor.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\MatcherGroupEditor.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\MultipleComicBooksDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\NewsDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\OpenRemoteDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\PasswordDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\PreferencesDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ProgressDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\QuickRatingDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\SaveWorkspaceDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ServerEditControl.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ShowErrorsDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\SmartListDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\SmartListQueryDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\Splash.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\TasksDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ValueEditorDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Dialogs\ZoomDialog.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\MainForm.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Properties\Resources.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\ReaderForm.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\ScriptOutputForm.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicBrowserControl.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicBrowserForm.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicBrowserView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicExplorerView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicListBrowser.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicListFilesBrowser.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicListFolderFilesBrowser.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicListLibraryBrowser.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\ComicPagesView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\MainView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\QuickOpenView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\RemoteConnectionView.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\SmallComicPreview.resx" />
+    <EmbeddedResource Include="Projects\ComicRack\Viewer\Views\SubView.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
